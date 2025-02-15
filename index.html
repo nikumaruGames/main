@@ -1,0 +1,132 @@
+<nav>
+    <div class="nav-container">
+        <h1 class="logo">nikumaru games</h1>
+        <button class="hamburger-menu">☰</button>
+        <div class="nav-items">
+            <a href="#home" data-i18n="home">首页</a>
+            <a href="mailto:nikumarugames@gmail.com" data-i18n="contact">业务联络</a>
+            <div class="language-dropdown">
+                <button data-i18n="language">语言</button>
+                <div class="dropdown-content">
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="zh">中文</a>
+                    <a href="#" data-lang="ja">日本語</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikumaru Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav></nav>
+
+    <!-- 主内容 -->
+    <main>
+        <section id="home" class="hero">
+            <h1 data-i18n="slogan">Games Create Joy for Life</h1>
+            <div class="cta-buttons">
+                <a href="#games" data-i18n="our_games">我们的游戏</a>
+                <a href="mailto:nikumarugames@gmail.com" data-i18n="contact_us">联系我们</a>
+            </div>
+            <div class="about-container">
+                <section class="about">
+                    <img src="image/icon.jpg" alt="Studio Icon">
+                    <div class="about-content">
+                        <h2 data-i18n="about_title">关于我们</h2>
+                        <p data-i18n="about_text">我们致力于创造带来欢乐的游戏体验</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="games-section">
+            <h2 class="section-title" data-i18n="our_games">Our Games</h2>
+            <!-- 产品展示 -->
+            <section id="games" class="products">
+                <div class="product-card">
+                    <a href="https://play.google.com/store/apps/details?id=com.matrix.defaultcompany.core" class="product-link">
+                        <img src="image/colorsort.jpg" alt="Color Sort" class="product-image">
+                        <div class="product-info">
+                            <h3 data-i18n="colorsort_title">Color Sort</h3>
+                            <div class="product-category" data-i18n="category_puzzle">PUZZLE</div>
+                            <div class="rating">★★★★★</div>
+                            <p data-i18n="colorsort_desc">Sort colorful blocks create beautiful patterns. Challenge yourself relax offline</p>
+                        </div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.matrix.defaultcompany.core" 
+                       class="product-download-btn">
+                        <img src="image/gpdl.jpg" alt="Download">
+                    </a>
+                </div>
+
+                <div class="product-card">
+                    <a href="https://play.google.com/store/apps/details?id=nikumaru.roadblast.blockblast.sort" class="product-link">
+                        <img src="image/roadblast.jpg" alt="Road Blast" class="product-image">
+                        <div class="product-info">
+                            <h3 data-i18n="roadblast_title">Road Blast</h3>
+                            <div class="product-category" data-i18n="category_puzzle">PUZZLE</div>
+                            <div class="rating">★★★★★</div>
+                            <p data-i18n="roadblast_desc">Build bridges for cars to cross the ocean in this challenging puzzle game.</p>
+                        </div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=nikumaru.roadblast.blockblast.sort" 
+                       class="product-download-btn">
+                        <img src="image/gpdl.jpg" alt="Download">
+                    </a>
+                </div>
+
+                <div class="product-card coming-soon">
+                    <div class="product-link">
+                        <img src="image/comingsoon.jpg" alt="Coming Soon" class="product-image">
+                        <div class="product-info">
+                            <h3 data-i18n="coming_soon">敬请期待</h3>
+                            <div class="product-category" data-i18n="category_coming">COMING SOON</div>
+                            <p data-i18n="coming_desc">全新游戏正在开发中</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+                <h2 class="social-title" data-i18n="social_media">社交媒体</h2>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@nikumarugames" target="_blank" class="social-icon">
+                        <svg class="icon-yt" viewBox="0 0 24 24" width="40" height="40">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/你的账号" target="_blank" class="social-icon">
+                        <svg class="icon-twitter" viewBox="0 0 24 24" width="40" height="40">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="copyright">
+            <p>© 2025 NikumaruGames All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <audio id="bgm" loop>
+        <source src="bgm.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clickSound" src="click.wav"></audio>
+</body> 
