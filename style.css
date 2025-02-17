@@ -1013,18 +1013,21 @@ a {
 
     /* 保持其他移动端样式不变 */
     .product-card {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        margin: 1rem 0;
+        transform: scale(0.9);
+        margin: 1rem auto;
+        width: 90%;
+        grid-template-columns: 1fr 2fr;
     }
 
     .product-image {
         width: 100%;
-        height: auto;
+        max-width: 300px;
+        height: 180px;
     }
 
     .product-info {
-        padding-right: 0;
+        padding-right: 20px;
+        font-size: 0.9em;
     }
 
     /* 调整文字大小 */
@@ -1043,16 +1046,14 @@ a {
 
     /* 按钮布局 */
     .cta-buttons {
-        flex-direction: column;
-        gap: 1rem;
+        transform: scale(0.9);
+        margin-top: 1rem;
     }
 
     .product-download-btn {
-        position: relative;
-        bottom: auto;
-        right: auto;
-        margin-top: 1rem;
-        width: 100%;
+        width: 140px;
+        bottom: 15px;
+        right: 15px;
     }
 
     /* 隐藏电脑端元素 */
@@ -1063,4 +1064,101 @@ a {
     .nav-items a {
         font-size: 1rem;
     }
+}
+
+/* 隐私政策按钮样式 */
+.privacy-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.privacy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 12px 24px;
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 30px;
+    color: #2b2d42;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.privacy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background: #fff;
+}
+
+.shield-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* 隐私政策弹窗样式 */
+.privacy-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    max-width: 600px;
+    width: 90%;
+    z-index: 1000;
+}
+
+.privacy-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+/* 隐私政策页面样式 */
+.privacy-main {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 2rem;
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.privacy-content h1 {
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.policy-text {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.back-btn {
+    display: block;
+    width: 200px;
+    margin: 2rem auto 0;
+    padding: 12px 24px;
+    text-align: center;
+    background: var(--accent);
+    color: var(--primary);
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
 } 

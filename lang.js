@@ -1,4 +1,3 @@
-
 const translations = {
     en: {
         home: "Home",
@@ -9,6 +8,9 @@ const translations = {
         contact_us: "Contact Us",
         about_title: "About Us",
         about_text: "We will create better gaming experiences and thank you for your support!",
+        privacy_policy: "Privacy Policy",
+        privacy_title: "Privacy Policy",
+        back_home: "Back to Home",
         // 添加所有其他翻译...
     },
     zh: {
@@ -20,6 +22,9 @@ const translations = {
         contact_us: "联系我们",
         about_title: "关于我们",
         about_text: "我们会创造更好的游戏体验，感谢你们的陪伴！",
+        privacy_policy: "隐私政策",
+        privacy_title: "隐私政策",
+        back_home: "返回首页",
         // 中文翻译...
     },
     ja: {
@@ -31,6 +36,9 @@ const translations = {
         contact_us: "お問い合わせ",
         about_title: "私たちについて",
         about_text: "より良いゲーム体験を創造し、皆さんのご支援に感謝します！",
+        privacy_policy: "プライバシーポリシー",
+        privacy_title: "プライバシーポリシー",
+        back_home: "ホームに戻る",
         // 日文翻译...
     }
 };

@@ -19,4 +19,33 @@ window.addEventListener('resize', () => {
     } else {
         navItems.style.display = 'none';
     }
-}); 
+});
+
+// 显示隐私政策弹窗
+function showPrivacyPolicy() {
+  const modal = document.createElement('div');
+  modal.className = 'privacy-modal';
+  modal.innerHTML = `
+    <h2>Privacy Policy</h2>
+    <div class="policy-content">
+      <!-- 这里添加您的隐私政策内容 -->
+      <p>Your privacy policy text goes here...</p>
+      <button onclick="closePrivacyModal()">Close</button>
+    </div>
+  `;
+  
+  const overlay = document.createElement('div');
+  overlay.className = 'privacy-overlay';
+  
+  document.body.appendChild(overlay);
+  document.body.appendChild(modal);
+  
+  overlay.style.display = 'block';
+  modal.style.display = 'block';
+}
+
+// 关闭弹窗
+function closePrivacyModal() {
+  document.querySelector('.privacy-modal').remove();
+  document.querySelector('.privacy-overlay').remove();
+} 
